@@ -1,0 +1,28 @@
+{
+  "root": true,
+  "parserOptions": {
+    "ecmaVersion": 7,
+    "sourceType": "module"
+  },
+  "extends": "airbnb-base",
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true,
+    "mocha": true
+  },
+  "rules": {
+    "padded-blocks": "off",
+    "arrow-body-style": ["error", "always"],
+    "no-else-return": "off",
+    "import/no-unresolved": "off",
+    "import/no-extraneous-dependencies": "off",
+
+    // Do not require extensions in import statements.
+    "import/extensions": "off",
+
+    // Allow the use of 'this._super(...arguments)'.
+    "no-underscore-dangle": ["error", { "allowAfterThis": true }],
+    "prefer-rest-params": "off"
+  }
+}
