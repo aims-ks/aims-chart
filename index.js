@@ -5,11 +5,15 @@
  */
 
 // Make classes available.
-import BasicChartView from './lib/basic-chart-view';
-export { BasicChartView };
+import BasicChart from './lib/basic-chart';
+export { BasicChart };
 
-import BarChartRenderer from './lib/renderers/bar-chart-renderer';
-export { BarChartRenderer };
+import BarSeriesRenderer from './lib/series/bar-series-renderer';
+export { BarSeriesRenderer };
 
-import LineChartRenderer from './lib/renderers/line-chart-renderer';
-export { LineChartRenderer };
+import LineSeriesRenderer from './lib/series/line-series-renderer';
+export { LineSeriesRenderer };
+
+import SelectableBarSeriesRenderer from './lib/series/selectable-bar-series-renderer';
+export { SelectableBarSeriesRenderer };
+
