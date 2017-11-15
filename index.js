@@ -14,6 +14,8 @@ export { BarSeriesRenderer };
 import LineSeriesRenderer from './lib/series/line-series-renderer';
 export { LineSeriesRenderer };
 
-import SelectableBarSeriesRenderer from './lib/series/selectable-bar-series-renderer';
-export { SelectableBarSeriesRenderer };
+import XAxisRenderer from './lib/x-axis/x-axis-renderer';
+export { XAxisRenderer };
 
+import SelectableXAxisRenderer from './lib/x-axis/selectable-x-axis-renderer';
+export { SelectableXAxisRenderer };
