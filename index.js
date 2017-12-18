@@ -5,8 +5,8 @@
  */
 
 // Make classes available.
-import BasicChart from './lib/basic-chart';
-export { BasicChart };
+import LineChart from './lib/line-chart';
+export { LineChart };
 
 import BarSeriesRenderer from './lib/series/bar-series-renderer';
 export { BarSeriesRenderer };
@@ -16,6 +16,3 @@ export { LineSeriesRenderer };
 
 import XAxisRenderer from './lib/x-axis/x-axis-renderer';
 export { XAxisRenderer };
-
-import SelectableXAxisRenderer from './lib/x-axis/selectable-x-axis-renderer';
-export { SelectableXAxisRenderer };
