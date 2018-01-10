@@ -4,19 +4,20 @@
   "description": "",
   "main": "./index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "node ./node_modules/eslint/bin/eslint.js ./index.js",
-    "doc": "./node_modules/.bin/jsdoc index.js"
+    "lint": "node ./node_modules/eslint/bin/eslint.js ./index.js ./lib/**",
+    "build": "webpack --env.WEBPACK_ENV=build",
+    "dev": "webpack --env.WEBPACK_ENV=dev --progress --colors --watch"
   },
   "author": "Aaron Smith (asmith@aims.gov.au)",
   "license": "CC-BY-4.0",
   "devDependencies": {
-    "babel-preset-es2015": "^6.24.1",
-    "eslint": "^4.11.0",
-    "eslint-config-airbnb-base": "^11.3.2",
-    "eslint-plugin-import": "^2.8.0",
-    "jsdoc": "^3.5.5",
-    "mocha": "^3.5.3"
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "clean-webpack-plugin": "^0.1.17",
+    "eslint": "^4.15.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
   },
   "dependencies": {
     "d3-array": "^1.2.1",
@@ -27,17 +28,5 @@
     "d3-shape": "^1.2.0",
     "d3-time": "^1.0.8",
     "events": "^1.1.1"
-  },
-  "browserify": {
-    "transform": [
-      [
-        "babelify",
-        {
-          "presets": [
-            "babel-preset-es2015"
-          ]
-        }
-      ]
-    ]
   }
 }
