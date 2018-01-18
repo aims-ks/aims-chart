@@ -5,33 +5,6 @@
   height: 100%;
   width: 100%;
 
-  // Default settings for text within the chart.
-  text {
-    font-size: 12px;
-    fill: #000;
-  }
-
-  .x-axis {
-
-    text.xAxisLabel {
-    }
-
-    .tick {
-
-      text {
-      }
-
-    }
-
-  }
-
-  .y-axis {
-
-    text.yAxisLabel {
-    }
-
-  }
-
   .line-series {
 
     .line {
