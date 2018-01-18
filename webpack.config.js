@@ -7,6 +7,7 @@ const path = require('path');
 const webpack = require('webpack');
 
 const LIBRARY_NAME = 'aims-chart';
+const LIBRARY_VERSION = require('./package.json').version;
 const OUTPUT_DIRECTORY = 'build';
 
 let plugins = [
@@ -25,9 +26,9 @@ Object.keys(require('./package.json').dependencies)
 let outputFile;
 if (env === 'build') {
   plugins.push(new UglifyJsPlugin({ minimize: true }));
-  outputFile = LIBRARY_NAME+ '.min.js';
+  outputFile = `${LIBRARY_NAME}-${LIBRARY_VERSION}.min.js`;
 } else {
-  outputFile = LIBRARY_NAME + '.js';
+  outputFile = `${LIBRARY_NAME}-${LIBRARY_VERSION}.js`;
 }
 
 const config = {
