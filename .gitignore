@@ -3,8 +3,10 @@
 aims-chart.iml
 
 # NPM files.
-package-lock.json
 node_modules/
+
+# build output folder
+build
 
 # Temporary files not for Git.
 ignore/
